@@ -26,8 +26,10 @@ code, tests, issues and documentation.
 - **Stripe checkout** — the optional payment path. The shopper is redirected to
   hosted Stripe Checkout; a verified `checkout.session.completed` webhook is
   the only thing that marks the order paid.
-- **Admin** — an unauthenticated area at `/admin`, enabled unless
-  `ADMIN_ENABLED=false`. It can create/edit/delete products and change order
+- **Admin** — a management area enabled unless `ADMIN_ENABLED=false`. Access
+  requires an admin session, obtained from `/admin/login`. The demo logs in
+  with one click when `ADMIN_PASSWORD` is unset; setting `ADMIN_PASSWORD`
+  requires that password. It can create/edit/delete products and change order
   statuses.
 - **Fulfillment** — the atomic operation that decrements stock for every order
   line and moves the order from `PENDING` to `PAID`. If any line cannot be

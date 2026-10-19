@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
-import { isAdminEnabled } from "@/lib/admin";
+import { requireAdmin } from "@/lib/admin";
 import { isStripeEnabled } from "@/lib/stripe";
 import { formatMoney } from "@/lib/money";
-import { deleteProduct, updateOrderStatus } from "./actions";
+import { deleteProduct, logoutAdmin, updateOrderStatus } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -16,7 +15,7 @@ const statusStyles: Record<string, string> = {
 };
 
 export default async function AdminPage() {
-  if (!isAdminEnabled()) notFound();
+  await requireAdmin();
 
   const [products, orders] = await Promise.all([
     prisma.product.findMany({
@@ -50,6 +49,14 @@ export default async function AdminPage() {
         >
           Add product
         </Link>
+        <form action={logoutAdmin}>
+          <button
+            type="submit"
+            className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold ring-1 ring-lavender-deep/40 hover:bg-lavender/40"
+          >
+            Log out
+          </button>
+        </form>
       </div>
 
       <section className="space-y-4">

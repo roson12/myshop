@@ -1,14 +1,13 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
-import { isAdminEnabled } from "@/lib/admin";
+import { requireAdmin } from "@/lib/admin";
 import { ProductForm } from "@/components/product-form";
 import { createProduct } from "../../actions";
 
 export const dynamic = "force-dynamic";
 
 export default async function NewProductPage() {
-  if (!isAdminEnabled()) notFound();
+  await requireAdmin();
 
   const categories = await prisma.category.findMany({ orderBy: { name: "asc" } });
 

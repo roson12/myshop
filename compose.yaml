@@ -22,7 +22,7 @@ services:
     environment:
       DATABASE_URL: "postgresql://pastel:pastel@db:5432/pastel_shop?schema=public"
       APP_URL: "http://localhost:3000"
-      ADMIN_ENABLED: "false"
+      ADMIN_ENABLED: "true"
       WATCHPACK_POLLING: "true"
     volumes:
       - .:/app
