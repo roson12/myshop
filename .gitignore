@@ -9,3 +9,5 @@ lib/generated/
 .DS_Store
 coverage/
 tsconfig.tsbuildinfo
+.vercel
+.env*

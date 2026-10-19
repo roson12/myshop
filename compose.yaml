@@ -6,7 +6,7 @@ services:
       POSTGRES_PASSWORD: pastel
       POSTGRES_DB: pastel_shop
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
     healthcheck:
@@ -22,7 +22,7 @@ services:
     environment:
       DATABASE_URL: "postgresql://pastel:pastel@db:5432/pastel_shop?schema=public"
       APP_URL: "http://localhost:3000"
-      ADMIN_ENABLED: "true"
+      ADMIN_ENABLED: "false"
       WATCHPACK_POLLING: "true"
     volumes:
       - .:/app
