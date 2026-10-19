@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Mint Sprig Notebook">
+  <rect width="400" height="400" fill="#d9f2e6"/>
+  <circle cx="200" cy="200" r="130" fill="#fff" opacity=".45"/>
+  <rect x="118" y="98" width="164" height="212" rx="14" fill="#f7fffb" stroke="#7fbfa2" stroke-width="6"/>
+  <rect x="118" y="98" width="34" height="212" rx="14" fill="#a9dcc5"/>
+  <g stroke="#b9e3d1" stroke-width="7" stroke-linecap="round">
+    <path d="M180 150h70M180 180h70M180 210h70M180 240h70M180 270h48"/>
+  </g>
+  <path d="M282 120c26 4 40 20 38 44-24 2-42-12-38-44z" fill="#7fbfa2"/>
+  <path d="M284 126c10 12 18 24 28 32" fill="none" stroke="#5d9c81" stroke-width="4" stroke-linecap="round"/>
+</svg>

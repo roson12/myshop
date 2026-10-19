@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Periwinkle Pen Set">
+  <rect width="400" height="400" fill="#e3e0f8"/>
+  <circle cx="200" cy="200" r="126" fill="#fff" opacity=".5"/>
+  <g transform="rotate(-18 200 200)">
+    <rect x="138" y="96" width="26" height="210" rx="13" fill="#9a9ade" stroke="#7373bd" stroke-width="5"/>
+    <path d="M138 96h26l-13-36z" fill="#7373bd"/>
+    <rect x="187" y="96" width="26" height="210" rx="13" fill="#b9a9e0" stroke="#8e7bbf" stroke-width="5"/>
+    <path d="M187 96h26l-13-36z" fill="#8e7bbf"/>
+    <rect x="236" y="96" width="26" height="210" rx="13" fill="#c7c7d9" stroke="#9393ad" stroke-width="5"/>
+    <path d="M236 96h26l-13-36z" fill="#9393ad"/>
+  </g>
+  <ellipse cx="200" cy="322" rx="90" ry="12" fill="#8e7bbf" opacity=".25"/>
+</svg>

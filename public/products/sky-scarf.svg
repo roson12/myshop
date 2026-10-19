@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Sky Blue Scarf">
+  <rect width="400" height="400" fill="#d6eaf8"/>
+  <circle cx="200" cy="195" r="126" fill="#fff" opacity=".5"/>
+  <path d="M118 132c42-22 70 22 104 0s64-20 84 2c-8 34-30 52-58 58-32 7-46 34-46 66 0 30-22 44-46 34-18-8-22-30-10-50 14-24 10-50-12-62-16-9-24-26-16-48z" fill="#b9dcf2" stroke="#7fb2d6" stroke-width="6" stroke-linejoin="round"/>
+  <g stroke="#eef8fd" stroke-width="7" stroke-linecap="round">
+    <path d="M142 158c26 4 40 22 62 24M176 270c4-18 18-30 36-34"/>
+  </g>
+  <g stroke="#7fb2d6" stroke-width="5" stroke-linecap="round">
+    <path d="M120 300v22M134 302v20M148 300v22M162 298v20M176 296v20M190 292v18"/>
+  </g>
+</svg>

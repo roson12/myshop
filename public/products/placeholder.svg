@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Pastel product placeholder">
+  <rect width="400" height="400" fill="#e8e1f5"/>
+  <circle cx="200" cy="200" r="120" fill="#fff" opacity=".5"/>
+  <circle cx="200" cy="200" r="58" fill="#d9f2e6" stroke="#b2748f" stroke-width="6"/>
+  <path d="M170 200h60M200 170v60" stroke="#b2748f" stroke-width="7" stroke-linecap="round"/>
+</svg>

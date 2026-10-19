@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Sage Desk Planter">
+  <rect width="400" height="400" fill="#dcebe0"/>
+  <circle cx="200" cy="200" r="126" fill="#fff" opacity=".5"/>
+  <path d="M142 238h116l-12 70h-92z" fill="#a9c9b0" stroke="#6f9879" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="132" y="222" width="136" height="24" rx="10" fill="#c3ddc9" stroke="#6f9879" stroke-width="6"/>
+  <path d="M200 222v-56" stroke="#6f9879" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#8db696">
+    <ellipse cx="168" cy="158" rx="16" ry="38" transform="rotate(-38 168 158)"/>
+    <ellipse cx="232" cy="158" rx="16" ry="38" transform="rotate(38 232 158)"/>
+    <ellipse cx="200" cy="136" rx="17" ry="42"/>
+    <ellipse cx="176" cy="196" rx="14" ry="30" transform="rotate(-62 176 196)"/>
+    <ellipse cx="224" cy="196" rx="14" ry="30" transform="rotate(62 224 196)"/>
+  </g>
+</svg>
