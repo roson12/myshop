@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Honey Lip Balm">
+  <rect width="400" height="400" fill="#fff1c9"/>
+  <circle cx="200" cy="200" r="124" fill="#fff" opacity=".55"/>
+  <ellipse cx="200" cy="236" rx="86" ry="70" fill="#f3d98f" stroke="#c9a94f" stroke-width="7"/>
+  <ellipse cx="200" cy="208" rx="86" ry="34" fill="#fff3c9" stroke="#c9a94f" stroke-width="7"/>
+  <ellipse cx="200" cy="208" rx="58" ry="20" fill="#f7e2a3"/>
+  <path d="M178 208c0-12 10-22 22-22s22 10 22 22" fill="none" stroke="#d9bd67" stroke-width="6" stroke-linecap="round"/>
+  <path d="M256 122c14 8 22 20 16 32-16 2-26-10-16-32z" fill="#e0b85a"/>
+</svg>

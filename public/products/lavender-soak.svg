@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Lavender Bath Soak">
+  <rect width="400" height="400" fill="#e8e1f5"/>
+  <circle cx="200" cy="200" r="128" fill="#fff" opacity=".5"/>
+  <rect x="132" y="150" width="136" height="164" rx="22" fill="#f8f4ff" stroke="#a594c9" stroke-width="7"/>
+  <rect x="148" y="208" width="104" height="82" rx="12" fill="#dcd2f0"/>
+  <g fill="#9a86c4">
+    <circle cx="172" cy="238" r="7"/><circle cx="196" cy="252" r="9"/>
+    <circle cx="222" cy="232" r="6"/><circle cx="236" cy="262" r="8"/>
+    <circle cx="184" cy="272" r="5"/>
+  </g>
+  <path d="M200 150v-24" stroke="#7fb47f" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#8fbf8f">
+    <ellipse cx="186" cy="116" rx="10" ry="18" transform="rotate(-28 186 116)"/>
+    <ellipse cx="214" cy="116" rx="10" ry="18" transform="rotate(28 214 116)"/>
+    <ellipse cx="200" cy="104" rx="9" ry="16"/>
+  </g>
+</svg>

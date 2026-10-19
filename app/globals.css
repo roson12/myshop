@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fff9f3;
+  --color-lavender: #e8e1f5;
+  --color-lavender-deep: #cfc2e6;
+  --color-mint: #d9f2e6;
+  --color-peach: #ffe3d3;
+  --color-sky: #d6eaf8;
+  --color-butter: #fff1c9;
+  --color-blush: #c98da8;
+  --color-blush-dark: #b2748f;
+  --color-ink: #3e3a4a;
+  --color-ink-soft: #6b6579;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased;
+  }
+}

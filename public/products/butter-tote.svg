@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Butter Yellow Tote">
+  <rect width="400" height="400" fill="#fff1c9"/>
+  <circle cx="200" cy="200" r="126" fill="#fff" opacity=".5"/>
+  <path d="M118 168h164l-14 148H132z" fill="#f6df94" stroke="#c9a94f" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M158 168v-26a42 42 0 0 1 84 0v26" fill="none" stroke="#c9a94f" stroke-width="8" stroke-linecap="round"/>
+  <rect x="157" y="218" width="86" height="54" rx="10" fill="#fff7de" stroke="#d9bd67" stroke-width="5"/>
+  <path d="M172 218v54" stroke="#d9bd67" stroke-width="4"/>
+  <path d="M118 168h164" stroke="#c9a94f" stroke-width="7" stroke-linecap="round"/>
+</svg>

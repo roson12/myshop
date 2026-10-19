@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Rose Clay Bowl">
+  <rect width="400" height="400" fill="#f7dfe6"/>
+  <circle cx="200" cy="195" r="126" fill="#fff" opacity=".48"/>
+  <path d="M112 176c0 66 40 116 88 116s88-50 88-116c-30 16-58 22-88 22s-58-6-88-22z" fill="#d8a3b6" stroke="#b5758d" stroke-width="7" stroke-linejoin="round"/>
+  <ellipse cx="200" cy="176" rx="88" ry="28" fill="#f3d4de" stroke="#b5758d" stroke-width="7"/>
+  <ellipse cx="200" cy="176" rx="58" ry="15" fill="#c98da8" opacity=".55"/>
+  <path d="M150 226c14 26 30 40 50 46" fill="none" stroke="#f7dfe6" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <ellipse cx="200" cy="314" rx="80" ry="12" fill="#b5758d" opacity=".32"/>
+</svg>
