@@ -1,15 +1,48 @@
 "use server";
 
+import { cookies } from "next/headers";
 import { revalidatePath } from "next/cache";
 import { notFound, redirect } from "next/navigation";
 import { prisma } from "@/lib/db";
-import { isAdminEnabled } from "@/lib/admin";
+import {
+  ADMIN_COOKIE,
+  adminSessionToken,
+  checkAdminPassword,
+  isAdminEnabled,
+  requireAdmin,
+} from "@/lib/admin";
 import { dollarsToCents } from "@/lib/money";
 
 const STATUSES = ["PENDING", "PAID", "FULFILLED", "CANCELLED"] as const;
 
-function ensureAdmin() {
+async function ensureAdmin() {
+  await requireAdmin();
+}
+
+export async function loginAdmin(formData: FormData) {
   if (!isAdminEnabled()) notFound();
+
+  const password = field(formData, "password");
+  if (!checkAdminPassword(password)) {
+    redirect("/admin/login?error=1");
+  }
+
+  const store = await cookies();
+  store.set(ADMIN_COOKIE, adminSessionToken(), {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    maxAge: 60 * 60 * 8,
+  });
+
+  redirect("/admin");
+}
+
+export async function logoutAdmin() {
+  const store = await cookies();
+  store.delete(ADMIN_COOKIE);
+  redirect("/");
 }
 
 function field(formData: FormData, key: string): string {
@@ -70,7 +103,7 @@ function revalidateStore() {
 }
 
 export async function createProduct(formData: FormData) {
-  ensureAdmin();
+  await ensureAdmin();
 
   const requestedSlug = field(formData, "slug") || field(formData, "name");
   const slug = await uniqueSlug(requestedSlug);
@@ -82,7 +115,7 @@ export async function createProduct(formData: FormData) {
 }
 
 export async function updateProduct(formData: FormData) {
-  ensureAdmin();
+  await ensureAdmin();
 
   const id = field(formData, "id");
   if (!id) throw new Error("Missing product id.");
@@ -103,7 +136,7 @@ export async function updateProduct(formData: FormData) {
 }
 
 export async function deleteProduct(formData: FormData) {
-  ensureAdmin();
+  await ensureAdmin();
 
   const id = field(formData, "id");
   if (id) {
@@ -115,7 +148,7 @@ export async function deleteProduct(formData: FormData) {
 }
 
 export async function updateOrderStatus(formData: FormData) {
-  ensureAdmin();
+  await ensureAdmin();
 
   const id = field(formData, "id");
   const status = field(formData, "status");

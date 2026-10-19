@@ -22,8 +22,8 @@ export default function RootLayout({
           <footer className="border-t border-lavender-deep/40 bg-white/60">
             <div className="mx-auto flex w-full max-w-5xl flex-col gap-2 px-4 py-6 text-sm text-ink-soft sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <p>Xorem Shop — a demo storefront. No real payments are taken.</p>
-              <a className="underline hover:text-ink" href="/admin">
-                Admin
+              <a className="underline hover:text-ink" href="/admin/login">
+                Admin login
               </a>
             </div>
           </footer>

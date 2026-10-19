@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/db";
-import { isAdminEnabled } from "@/lib/admin";
+import { requireAdmin } from "@/lib/admin";
 import { ProductForm } from "@/components/product-form";
 import { deleteProduct, updateProduct } from "../../actions";
 
@@ -12,7 +12,7 @@ type EditProductPageProps = {
 };
 
 export default async function EditProductPage({ params }: EditProductPageProps) {
-  if (!isAdminEnabled()) notFound();
+  await requireAdmin();
 
   const { id } = await params;
 

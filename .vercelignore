@@ -1,0 +1,9 @@
+.git
+.next
+.vercel
+node_modules
+lib/generated
+.env
+.env.*
+coverage
+*.log

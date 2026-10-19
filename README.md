@@ -85,7 +85,9 @@ public/products/        Local SVG product art
 - Order lines snapshot name/image/price, so editing or deleting a product never
   rewrites history.
 - The cart lives in `localStorage`; there are no customer accounts.
-- `/admin` has no login. Set `ADMIN_ENABLED=false` to make it return 404.
+- `/admin` requires a session obtained from `/admin/login`. In the demo the
+  button signs in with one click; set `ADMIN_PASSWORD` to require a password.
+  Set `ADMIN_ENABLED=false` to make the Admin area return 404.
 - Stock is decremented atomically at payment fulfillment; an oversold order is
   marked `CANCELLED` instead of going negative.
 
